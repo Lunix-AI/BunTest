@@ -1,6 +1,6 @@
 # buntest
 
-To install dependencies:
+Test with bun:
 
 ```bash
 bun install
@@ -9,7 +9,20 @@ bun install
 To run:
 
 ```bash
-bun run index.ts
+bun dev
 ```
 
-This project was created using `bun init` in bun v1.1.1. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+Now change a/src/index.ts, see watch working well.
+Now change b/src/index.ts, see watch not working well.
+
+To contrast with, run vite node:
+
+```bash
+bun dev:vite-node
+```
+
+Now change a/src/index.ts, see watch working well.
+Now change b/src/index.ts, see watch working well also.
+
+This is the expected behaviour.
+
