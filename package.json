@@ -1,0 +1,18 @@
+{
+  "name": "buntest",
+  "type": "module",
+  "scripts": {
+    "dev": "bun --cwd ./packages/a dev",
+    "dev:vite-node": "bun --cwd ./packages/a dev:vite-node"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "vite-node": "^1.4.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
+}
